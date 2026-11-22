@@ -1,0 +1,27 @@
+# Secrets : ne jamais publier
+.env
+.env.*
+!.env.example
+
+# Données locales (base SQLite, sauvegardes)
+data/*
+!data/.gitkeep
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Divers
+*.log
+.DS_Store
+.idea/
+.vscode/
